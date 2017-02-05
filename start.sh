@@ -1,4 +1,5 @@
 #!/bin/sh
+## testje
 PYTHON=/usr/bin/python
 SICKRAGE=/sickrage
 DATA=/Configs/sickrage
