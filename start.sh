@@ -6,8 +6,6 @@ DATA=/Configs/sickrage
 if [ -d $DATA ] && [ -r $DATA/sickrage_config.ini ];
 then
 	cd $SICKRAGE
-	[ -f sickbeard.db ] && rm -rf sickbeard.db
-	ln -s $DATA/sickbeard.db
 	$PYTHON $SICKRAGE/SickBeard.py --config=$DATA/sickrage_config.ini --data=$DATA
 else
 	mkdir -p $DATA
